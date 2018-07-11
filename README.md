@@ -1,10 +1,10 @@
-# ETNX-Stak - Stellite All-in-One Mining Software
+# FAST-Stak - Stellite All-in-One Mining Software
 
-**ETNX-Stak is ready for the PoW change of Electronero**
+**FAST-Stak is ready for the PoW change of Electronero**
 
-ETNX-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NVIDIA GPUs and can be used to mine the crypto currency Stellite, Monero, Aeon and others.
+FAST-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NVIDIA GPUs and can be used to mine the crypto currency Stellite, Monero, Aeon and others.
 
-###### This fork includes updates for Stellite, original code created by [fireice-uk and psychocrypt](https://github.com/fireice-uk/xmr-stak)
+###### This fork includes updates for Stellite, original code created by [fireice-uk and psychocrypt](https://github.com/fireice-uk/xmr-stak) and contributions from The Stellite Project and The Electronero Project
 
 ## HTML reports
 <img src="doc/web_hashrate.png" width="260"> <img src="doc/web_result.png" width="260"> <img src="doc/web_connection.png" width="260">
@@ -49,6 +49,7 @@ Besides [Stellite](https://stellite.cash), following coins can be mined using th
 - [Croat](https://croat.cat)
 - [Edollar](https://edollar.cash)
 - [Electroneum](https://electroneum.com)
+- [electronero](https://electronero.org)
 - [Graft](https://www.graft.network)
 - [Haven](https://havenprotocol.com)
 - [Intense](https://intensecoin.com)
