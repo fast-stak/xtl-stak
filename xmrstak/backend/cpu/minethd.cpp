@@ -289,6 +289,9 @@ bool minethd::self_test()
 	else if(::jconf::inst()->GetCurrentCoinSelection().GetDescription(1).GetMiningAlgo() == cryptonight_ipbc)
 	{
 	}
+	else if(::jconf::inst()->GetCurrentCoinSelection().GetDescription(1).GetMiningAlgo() == cryptonight_stellite)
+	{
+	}
 	else if(::jconf::inst()->GetCurrentCoinSelection().GetDescription(1).GetMiningAlgo() == cryptonight_fast)
 	{
 	}
@@ -377,6 +380,9 @@ minethd::cn_hash_fun minethd::func_selector(bool bHaveAes, bool bNoPrefetch, xmr
 	case cryptonight_fast:
 		algv = 6;
 		break;
+	case cryptonight_stellite:
+		algv = 6;
+		break;
 	default:
 		algv = 2;
 		break;
@@ -407,6 +413,10 @@ minethd::cn_hash_fun minethd::func_selector(bool bHaveAes, bool bNoPrefetch, xmr
 		cryptonight_hash<cryptonight_ipbc, true, false>,
 		cryptonight_hash<cryptonight_ipbc, false, true>,
 		cryptonight_hash<cryptonight_ipbc, true, true>,
+		cryptonight_hash<cryptonight_stellite, false, false>,
+		cryptonight_hash<cryptonight_stellite, true, false>,
+		cryptonight_hash<cryptonight_stellite, false, true>,
+		cryptonight_hash<cryptonight_stellite, true, true>
 		cryptonight_hash<cryptonight_fast, false, false>,
 		cryptonight_hash<cryptonight_fast, true, false>,
 		cryptonight_hash<cryptonight_fast, false, true>,
@@ -552,6 +562,9 @@ minethd::cn_hash_fun_multi minethd::func_multi_selector(size_t N, bool bHaveAes,
 	case cryptonight_fast:
 		algv = 6;
 		break;
+	case cryptonight_stellite:
+		algv = 6;
+		break;
 	default:
 		algv = 2;
 		break;
@@ -660,6 +673,23 @@ minethd::cn_hash_fun_multi minethd::func_multi_selector(size_t N, bool bHaveAes,
 		cryptonight_penta_hash<cryptonight_ipbc, false, true>,
 		cryptonight_penta_hash<cryptonight_ipbc, true, true>,
 
+		cryptonight_double_hash<cryptonight_stellite, false, false>,
+		cryptonight_double_hash<cryptonight_stellite, true, false>,
+		cryptonight_double_hash<cryptonight_stellite, false, true>,
+		cryptonight_double_hash<cryptonight_stellite, true, true>,
+		cryptonight_triple_hash<cryptonight_stellite, false, false>,
+		cryptonight_triple_hash<cryptonight_stellite, true, false>,
+		cryptonight_triple_hash<cryptonight_stellite, false, true>,
+		cryptonight_triple_hash<cryptonight_stellite, true, true>,
+		cryptonight_quad_hash<cryptonight_stellite, false, false>,
+		cryptonight_quad_hash<cryptonight_stellite, true, false>,
+		cryptonight_quad_hash<cryptonight_stellite, false, true>,
+		cryptonight_quad_hash<cryptonight_stellite, true, true>,
+		cryptonight_penta_hash<cryptonight_stellite, false, false>,
+		cryptonight_penta_hash<cryptonight_stellite, true, false>,
+		cryptonight_penta_hash<cryptonight_stellite, false, true>,
+		cryptonight_penta_hash<cryptonight_stellite, true, true>,
+		
 		cryptonight_double_hash<cryptonight_fast, false, false>,
 		cryptonight_double_hash<cryptonight_fast, true, false>,
 		cryptonight_double_hash<cryptonight_fast, false, true>,
