@@ -21,7 +21,7 @@ extern const char sHtmlCssFile [] =
 	"}"
 
 	"a:hover {"
-		"color: #9012F0;"
+		"color: rgb(255, 153, 0);"
 	"}"
 
 	"a:active {"
@@ -34,7 +34,8 @@ extern const char sHtmlCssFile [] =
 	"}"
 
 	".header {"
-		"color: #9012F0;"
+		"background-color: rgb(30, 30, 30);"
+		"color: white;"
 		"padding: 10px;"
 		"font-weight: bold;"
 		"margin: 0px;"
@@ -77,7 +78,7 @@ extern const char sHtmlCssFile [] =
 	"}"
 
 	"h4 {"
-		"background-color: #540C87;"
+		"background-color: rgb(0, 130, 130);"
 		"color: white;"
 		"padding: 10px;"
 		"margin: 10px 0px;"
@@ -131,7 +132,7 @@ extern const char sHtmlCommonHeader [] =
 	"<body>"
 	"<div class='all'>"
 	"<div class='version'>%s</div>"
-	"<div class='header'>XTL-Stak Stellite Miner</div>"
+	"<div class='header'>ETNX-Stak Stellite Miner</div>"
 
 	"<div class='flex-container'>"
 		"<div class='links flex-item'>"
