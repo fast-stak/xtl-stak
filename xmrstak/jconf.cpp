@@ -97,7 +97,8 @@ xmrstak::coin_selection coins[] = {
 	{ "cryptonight_lite_v7", {cryptonight_lite, cryptonight_aeon, 255u},   {cryptonight_aeon, cryptonight_lite, 7u},     nullptr },
 	{ "cryptonight_lite_v7_xor", {cryptonight_aeon, cryptonight_ipbc, 255u}, {cryptonight_aeon, cryptonight_aeon, 255u}, nullptr },
 	{ "cryptonight_v7",      {cryptonight_monero, cryptonight_monero, 0u}, {cryptonight_monero, cryptonight_monero, 0u}, nullptr },
-	{ "cryptonight_v7_stellite", {cryptonight_monero, cryptonight_stellite, 255u}, {cryptonight_monero, cryptonight_monero, 255u}, nullptr },
+	{ "cryptonight_v7_stellite", {cryptonight_monero, cryptonight_fast, 255u}, {cryptonight_monero, cryptonight_monero, 255u}, nullptr },
+	{ "cryptonight_v7_electronero", {cryptonight_monero, cryptonight_fast, 255u}, {cryptonight_monero, cryptonight_monero, 255u}, nullptr },
 	{ "edollar",             {cryptonight_monero, cryptonight, 255u},      {cryptonight_monero, cryptonight_monero, 0u}, nullptr },
 	{ "electronero",         {cryptonight_fast, cryptonight_monero, 4u}, {cryptonight_fast, cryptonight_monero, 4u}, "uspool.electronero.org:1122" },
 	{ "electroneum",         {cryptonight_monero, cryptonight, 255u},      {cryptonight_monero, cryptonight_monero, 0u}, nullptr },
@@ -108,7 +109,7 @@ xmrstak::coin_selection coins[] = {
 	{ "karbo",               {cryptonight_monero, cryptonight, 255u},      {cryptonight_monero, cryptonight_monero, 0u}, nullptr },
 	{ "masari",              {cryptonight_monero, cryptonight, 5u},        {cryptonight_monero, cryptonight_monero, 0u}, nullptr },
 	{ "monero7",             {cryptonight_monero, cryptonight_monero, 0u}, {cryptonight_monero, cryptonight_monero, 0u}, "pool.usxmrpool.com:3333" },
-	{ "stellite",            {cryptonight_stellite, cryptonight_monero, 4u}, {cryptonight_stellite, cryptonight_monero, 4u}, "communitypool.stellite.cash:6677" },
+	{ "stellite",            {cryptonight_fast, cryptonight_monero, 4u}, {cryptonight_fast, cryptonight_monero, 4u}, "communitypool.stellite.cash:6677" },
 	{ "sumokoin",            {cryptonight_heavy, cryptonight_heavy, 0u},   {cryptonight_heavy, cryptonight_heavy, 0u},   nullptr },
 	{ "turtlecoin",          {cryptonight_lite, cryptonight_aeon, 255u},   {cryptonight_aeon, cryptonight_lite, 7u},     nullptr }
 };
