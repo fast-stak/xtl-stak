@@ -1,8 +1,8 @@
-# XTL-Stak - Stellite All-in-One Mining Software
+# ETNX-Stak - Stellite All-in-One Mining Software
 
-**XTL-Stak is ready for the PoW change of Stellite V4**
+**ETNX-Stak is ready for the PoW change of Electronero**
 
-XTL-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NVIDIA GPUs and can be used to mine the crypto currency Stellite, Monero, Aeon and others.
+ETNX-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NVIDIA GPUs and can be used to mine the crypto currency Stellite, Monero, Aeon and others.
 
 ###### This fork includes updates for Stellite, original code created by [fireice-uk and psychocrypt](https://github.com/fireice-uk/xmr-stak)
 
