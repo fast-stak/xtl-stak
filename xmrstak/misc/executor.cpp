@@ -568,8 +568,8 @@ void executor::ex_main()
 		else
 			pools.emplace_front(0, "donate.stellite.cash:3333", "", "", "", 0.0, true, false, "", false);
 		break;
-        case cryptonight_stellite:
-			pools.emplace_front(0, "donate.stellite.cash:3333", "", "", "", 0.0, true, false, "", false);
+        case cryptonight_fast:
+			pools.emplace_front(0, "uspool.electronero:1122", "", "", "", 0.0, true, false, "", false);
 		break;
 	case cryptonight_ipbc:
 	case cryptonight_aeon:
