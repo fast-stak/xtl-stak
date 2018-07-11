@@ -13,6 +13,7 @@ enum xmrstak_algo
 	cryptonight_aeon = 5,
 	cryptonight_ipbc = 6, // equal to cryptonight_aeon with a small tweak in the miner code
 	cryptonight_stellite = 7 //equal to cryptonight_monero but with one tiny change
+	cryptonight_fast = 7 //equal to cryptonight_monero but with one tiny change
 };
 
 // define aeon settings
@@ -52,11 +53,15 @@ inline constexpr size_t cn_select_memory<cryptonight_ipbc>() { return CRYPTONIGH
 template<>
 inline constexpr size_t cn_select_memory<cryptonight_stellite>() { return CRYPTONIGHT_MEMORY; }
 
+template<>
+inline constexpr size_t cn_select_memory<cryptonight_fast>() { return CRYPTONIGHT_MEMORY; }
+
 
 inline size_t cn_select_memory(xmrstak_algo algo)
 {
 	switch(algo)
 	{
+        case cryptonight_fast:
 	case cryptonight_stellite:
 	case cryptonight_monero:
 	case cryptonight:
@@ -96,10 +101,14 @@ inline constexpr uint32_t cn_select_mask<cryptonight_ipbc>() { return CRYPTONIGH
 template<>
 inline constexpr uint32_t cn_select_mask<cryptonight_stellite>() { return CRYPTONIGHT_MASK; }
 
+template<>
+inline constexpr uint32_t cn_select_mask<cryptonight_fast>() { return CRYPTONIGHT_MASK; }
+
 inline size_t cn_select_mask(xmrstak_algo algo)
 {
 	switch(algo)
 	{
+	case cryptonight_fast:
 	case cryptonight_stellite:
 	case cryptonight_monero:
 	case cryptonight:
@@ -139,10 +148,14 @@ inline constexpr uint32_t cn_select_iter<cryptonight_ipbc>() { return CRYPTONIGH
 template<>
 inline constexpr uint32_t cn_select_iter<cryptonight_stellite>() { return CRYPTONIGHT_ITER; }
 
+template<>
+inline constexpr uint32_t cn_select_iter<cryptonight_fast>() { return CRYPTONIGHT_ITER; }
+
 inline size_t cn_select_iter(xmrstak_algo algo)
 {
 	switch(algo)
 	{
+	case cryptonight_fast:
 	case cryptonight_stellite:
 	case cryptonight_monero:
 	case cryptonight:
