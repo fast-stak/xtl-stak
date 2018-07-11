@@ -63,11 +63,10 @@ void help()
 	using namespace xmrstak;
 
 	printf(R"EOF(
-__  _______ _         ____ _____  _    _  __
-\ \/ |_   _| |       / ___|_   _|/ \  | |/ /
- \  /  | | | |   ____\___ \ | | / _ \ | ' /
- /  \  | | | |__|____|___) || |/ ___ \| . \
-/_/\_\ |_| |_____|   |____/ |_/_/   \_|_|\_\
+   ___ _____ _  __ _  __  _   __ __ _  __ ___  ___ 
+  / _//_  _// |/ /| |/,' / \,' // // |/ // _/ / o |
+ / _/  / / / || / /  /  / \,' // // || // _/ /  ,' 
+/___/ /_/ /_/|_/,'_n_\ /_/ /_//_//_/|_//___//_/`_\ 
 
 )EOF");
 
@@ -778,18 +777,17 @@ int main(int argc, char *argv[])
 	}
 
 	printf(R"EOF(
-__  _______ _         ____ _____  _    _  __
-\ \/ |_   _| |       / ___|_   _|/ \  | |/ /
- \  /  | | | |   ____\___ \ | | / _ \ | ' /
- /  \  | | | |__|____|___) || |/ ___ \| . \
-/_/\_\ |_| |_____|   |____/ |_/_/   \_|_|\_\
+   ___ _____ _  __ _  __  _   __ __ _  __ ___  ___ 
+  / _//_  _// |/ /| |/,' / \,' // // |/ // _/ / o |
+ / _/  / / / || / /  /  / \,' // // || // _/ /  ,' 
+/___/ /_/ /_/|_/,'_n_\ /_/ /_//_//_/|_//___//_/`_\ 
 
 	)EOF");
 
 	printer::inst()->print_str("-------------------------------------------------------------------\n");
 	printer::inst()->print_str(get_version_str_short().c_str());
 	printer::inst()->print_str("\n\n");
-	printer::inst()->print_str("Brought to you by fireice_uk and psychocrypt under GPLv3, additional work done by the Stellite Project\n");
+	printer::inst()->print_str("Brought to you by fireice_uk and psychocrypt under GPLv3, additional work done by the Stellite and Electronero Project(s)\n");
 	printer::inst()->print_str("Based on CPU mining code by wolf9466 (heavily optimized by fireice_uk).\n");
 #ifndef CONF_NO_CUDA
 	printer::inst()->print_str("Based on NVIDIA mining code by KlausT and psychocrypt.\n");
