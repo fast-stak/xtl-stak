@@ -688,6 +688,9 @@ bool jpsock::cmd_submit(const char* sJobId, uint32_t iNonce, const uint8_t* bRes
 		case cryptonight_aeon:
 			algo_name = "cryptonight_lite_v7";
 			break;
+		case cryptonight_fast:
+			algo_name = "cryptonight_v7_electronero";
+			break;
 		case cryptonight_stellite:
 			algo_name = "cryptonight_v7_stellite";
 			break;
