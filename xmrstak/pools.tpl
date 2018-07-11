@@ -35,6 +35,7 @@ POOLCONF],
  *    sumokoin (automatic switch with block version 3 to cryptonight_heavy)
  *    turtlecoin
  *    stellite
+ *    electronero
  *
  * Native algorithms which not depends on any block versions:
  *
